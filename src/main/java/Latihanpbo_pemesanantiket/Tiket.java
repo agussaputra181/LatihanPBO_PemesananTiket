@@ -1,4 +1,4 @@
-package latihanpbo_pemesanantiket;
+package Latihanpbo_pemesanantiket;
 
 /**
  * Data umum yang dimiliki semua tiket : kode, tujuan,harga,dan kursi.

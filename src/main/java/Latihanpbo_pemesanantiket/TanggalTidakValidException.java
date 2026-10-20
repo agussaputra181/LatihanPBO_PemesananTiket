@@ -1,4 +1,4 @@
-package latihanpbo_pemesanantiket;
+package Latihanpbo_pemesanantiket;
 
 /**
  * Exception yang dilemparkan ketika tanggal pemesanan, keberangkatan, 
