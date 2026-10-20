@@ -100,7 +100,7 @@ public class AplikasiTiket{
     private static void tampilMenu(){
         System.out.println();
         System.out.println("--------------- Menu -------------");
-        System.out.println("1. Tampilkan tiekt Bus");
+        System.out.println("1. Tampilkan tiket Bus");
         System.out.println("2. Tampilkan tiket Kereta");
         System.out.println("3. Buat pemesanan");
         System.out.println("4. Tampilkan detail pemesanan");
