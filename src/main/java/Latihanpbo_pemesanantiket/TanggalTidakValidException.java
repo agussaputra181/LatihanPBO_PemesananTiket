@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Latihanpbo_pemesanantiket;
+package latihanpbo_pemesanantiket;
 
 /**
- *
- * @author HP Victus 15
+ * Exception yang dilemparkan ketika tanggal pemesanan, keberangkatan, 
+ * atau pembatalan tidak sesuai aturan
  */
-public class TanggalTidakValidException {
+public class TanggalTidakValidException extends Exception {
     
+    public TanggalTidakValidException(String pesan){
+        super(pesan);
+    }
 }
