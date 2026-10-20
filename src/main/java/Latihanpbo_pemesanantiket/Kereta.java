@@ -1,13 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Latihanpbo_pemesanantiket;
 
 /**
- *
- * @author HP Victus 15
+ * Tiket Kereta. Total bayar = (harga satu tiket x jumlah tiket) + biaya layanan.
+ * Biaya layanan dibayar sekali saja, berapapun jumlah tiket yang dibeli.
  */
-public class Kereta {
+public class Kereta extends Tiket{
     
+    private double biayaLayanan;
+    
+    public Kereta(String kodeTiket, String tujuan, double hargaPerTiket,
+            int kursiTersedia, double biayaLayanan){
+        super(kodeTiket, tujuan, hargaPerTiket, kursiTersedia);
+        if (biayaLayanan <0){
+             throw new IllegalArgumentException("Biaya layanan tidak boleh negatif.");
+        }
+        this.biayaLayanan = biayaLayanan;
+    }
+    
+   @Override
+   public double hitungTotalPembayaran(int jumlah){
+       if (jumlah<=0){
+           throw new IllegalArgumentException("Jumlah tiket harus lebih dari 0.");
+       }
+       return (getHargaPerTiket()* jumlah) + biayaLayanan;
+   }
+   
+   public String getJenis(){
+       return "Kereta";
+   }
 }
