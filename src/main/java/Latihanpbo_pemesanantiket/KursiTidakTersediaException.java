@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Latihanpbo_pemesanantiket;
+package latihanpbo_pemesanantiket;
 
 /**
- *
- * @author HP Victus 15
+ * Exception yang dilemparkan ketika jumlah tiket yang diminta
+ * melebihi jumlah yang tersedia
  */
-public class KursiTidakTersediaException {
+public class KursiTidakTersediaException extends Exception {
     
+    public KursiTidakTersediaException(String pesan){
+        super(pesan);
+    }
 }
